@@ -1,4 +1,12 @@
 <script>
+    // importing the store data
+    import ListStore from "../store/ListStore";
+    let listOfItems = $ListStore;
+
+    $: totalItemCount = listOfItems.length;
+    $: completedItemCount = listOfItems.filter(
+        (currentList) => currentList.completed
+    ).length;
 </script>
 
 <style>
@@ -16,5 +24,5 @@
 
 <header class="header">
     <span>Gilbert's To-Do List</span>
-    <span>0/0</span>
+    <span>{completedItemCount}/{totalItemCount}</span>
 </header>
