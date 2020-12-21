@@ -1,5 +1,6 @@
 <script>
 	import Header from "./components/Header.svelte";
+	import List from "./components/List.svelte";
 </script>
 
 <style type="text/scss">
@@ -25,6 +26,7 @@
 <!-- <main> -->
 <div class="container">
 	<Header />
-	sample text
+	<List />
+	pause at 18:40
 </div>
 <!-- </main> -->
